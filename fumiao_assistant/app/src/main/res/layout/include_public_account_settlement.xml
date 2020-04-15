@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_public_account"
+    android:divider="@drawable/line"
+    android:orientation="vertical"
+    android:showDividers="middle|beginning|end"
+    android:layout_marginBottom="7dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="38dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/font_title"
+            android:textSize="@dimen/font_17sp"
+            android:text="开户许可证"/>
+        <ImageView
+            android:id="@+id/iv_open_bank"
+            android:layout_width="124dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_bank_front" />
+    </LinearLayout>
+    <com.fumiao.core.widget.KeyEditText
+        android:id="@+id/public_account_name"
+        style="@style/MeItem"
+        app:hint="请输入账户名"
+        app:key="账户名:"/>
+</LinearLayout>

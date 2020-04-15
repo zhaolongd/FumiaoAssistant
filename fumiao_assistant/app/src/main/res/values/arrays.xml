@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tcv_type_items">
+        <item>商户</item>
+        <item>门店</item>
+    </string-array>
+
+    <string-array name="tcv_type_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="sort_merchant_mode_entry">
+        <item>活跃商户</item>
+        <item>交易笔数最多</item>
+        <item>交易金额最多</item>
+        <item>本月累计最多</item>
+        <item>月增长最多</item>
+    </string-array>
+
+    <string-array name="sort_store_mode_entry">
+        <item>活跃门店</item>
+        <item>交易笔数最多</item>
+        <item>交易金额最多</item>
+        <item>本月累计最多</item>
+        <item>月增长最多</item>
+    </string-array>
+</resources>

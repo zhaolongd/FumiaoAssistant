@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:divider="@drawable/line"
+    android:background="@color/colorPrimaryDark"
+    android:showDividers="middle|beginning|end"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/ContentStyle"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/font_16sp"
+           android:textColor="@color/change_pwd_text"
+           android:layout_marginLeft="23dp"
+           android:text="机构:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/font_16sp"
+            android:textColor="@color/text_color"
+            android:text="@string/company_name"/>
+    </LinearLayout>
+</LinearLayout>

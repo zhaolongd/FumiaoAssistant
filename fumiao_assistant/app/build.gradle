@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.fumiao.assistant"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 10
+        versionName "1.1.8"
+        buildConfigField "String", "URL", '"http://agency.api.fumiao100.com/api/v1"'
+        buildConfigField "String", "ACTIVITY_URL",  '"http://agency.pc.fumiao100.com"'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        multiDexEnabled true
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "cc98a33a38598eb8855bd326", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                XIAOMI_APPKEY : "MI-5171799676453",
+                XIAOMI_APPID : "MI-2882303761517996453",
+                HUAWEI_APPID:"100750267",//华为平台注册的appid
+                OPPO_APPKEY : "OP-09e16496706d43e887a5c6248095cf04", // OPPO平台注册的appkey
+                OPPO_APPID : "OP-30129172", // OPPO平台注册的appid
+                OPPO_APPSECRET: "OP-d008d191529347ef8cc5e1f0307b973f",//OPPO平台注册的appsecret
+        ]
+        ndk {
+            //选择要添加的对应cpu类型的.so库。为了兼容cpu，查看官网SDK的libs多添加几个
+            // armeabi：已经淘汰（0%）
+            // armeabi-v7a：曾经主流的架构平台（20%）
+            // arm64-v8a：目前主流架构平台（80%）
+            abiFilters "armeabi-v7a", "arm64-v8a"
+            // 还可以添加 'armeabi', 'x86','armeabi-v7a','arm64-v8a', 'x86_64', 'mips', 'mips64'
+        }
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+
+    greendao{
+        //指定数据库schema版本号，迁移等操作会用到;
+        schemaVersion 2
+        //dao的包名，包名默认是entity所在的包；
+        daoPackage 'com.fumiao.assistant.gen'
+        //生成数据库文件的目录;
+        targetGenDir 'src/main/java'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            // 移除无用的resource文件
+            //shrinkResources true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "URL", '"https://as.api.51fumiao.com/api/v1"'
+            buildConfigField "String", "ACTIVITY_URL",  '"http://as.51fumiao.com"'
+        }
+
+        debug{
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            buildConfigField "String", "URL", '"https://as.api.fumiao100.com/api/v1"'
+            buildConfigField "String", "ACTIVITY_URL",  '"http://as.fumiao100.com"'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('key.jks')
+            storePassword 'Fumiao123'
+            keyAlias 'key0'
+            keyPassword 'Fumiao123'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(path: ':core')
+    implementation project(':pickerview')
+    implementation project(path: ':ocr_ui')
+    implementation ('com.github.niorgai:StatusBarCompat:2.1.4', {
+        exclude group: 'com.android.support'
+    })
+    implementation 'org.greenrobot:greendao:3.2.2' // add library
+//    implementation 'com.tencent.bugly:crashreport:3.1.0'
+    implementation 'com.tencent.bugly:crashreport_upgrade:1.4.2'
+    implementation 'com.tencent.bugly:nativecrashreport:3.7.1'
+    implementation 'com.github.xuexiangjys:XUI:1.0.9-support'
+}

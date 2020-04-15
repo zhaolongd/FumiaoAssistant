@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@drawable/line"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end">
+        <com.fumiao.core.widget.KeyEditText
+            android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:key="终端名称"></com.fumiao.core.widget.KeyEditText>
+
+        <com.fumiao.core.widget.KeyEditText
+            android:id="@+id/device_sn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:key="设备号"></com.fumiao.core.widget.KeyEditText>
+
+        <com.fumiao.core.widget.KeyEditText
+            android:id="@+id/device_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:key="设备类型"></com.fumiao.core.widget.KeyEditText>
+
+        <com.fumiao.core.widget.KeyEditText
+            android:id="@+id/device_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:key="所属门店"></com.fumiao.core.widget.KeyEditText>
+
+        <com.fumiao.core.widget.KeyEditText
+            android:id="@+id/activation_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:key="激活时间"></com.fumiao.core.widget.KeyEditText>
+
+        <com.fumiao.core.widget.KeyEditText
+            android:id="@+id/device_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:key="状态"></com.fumiao.core.widget.KeyEditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/btn_clickable_bg"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/font_19sp"
+        android:text="解除绑定"/>
+</LinearLayout>

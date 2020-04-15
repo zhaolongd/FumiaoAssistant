@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FFAE57</color>
+    <color name="blue">#5392FF</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="app_bg">#f6f6f6</color>
+    <color name="gray_bg">#EEEEEE</color>
+    <color name="font_des">#999999</color>
+    <color name="font_title">#545454</color>
+    <color name="font_content">#747C93</color>
+    <color name="font_key">#4D4D4D</color>
+    <color name="font_red">#FF7979</color>
+    <color name="line">#E6E6E6</color>
+    <color name="font_contents">#4A4A4A</color>
+    <color name="orange">#FFA441</color>
+    <color name="font_no_press">#5B5B5B</color>
+    <color name="font_press">#FF8500</color>
+    <color name="foreground_top">#f5f5f5</color>
+</resources>
