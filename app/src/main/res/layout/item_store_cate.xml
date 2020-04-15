@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/item_store_cate_name"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_store_cates"
+        android:gravity="center"
+        android:maxEms="4"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="意大利面"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/font_content" />
+
+</RelativeLayout>

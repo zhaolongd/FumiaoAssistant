@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textColor="@color/font_contents"
+            android:textSize="@dimen/font_content"
+            android:text="请输入授权码"/>
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="终端解绑操作。此操作，需业务员验证码授权，业务员授权码获取5分钟有效。"
+            android:textColor="@color/font_des"
+            android:textSize="@dimen/font_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_phone2"/>
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_phone"
+                android:textColor="@color/font_des"
+                android:textSize="@dimen/font_content" />
+            <com.fumiao.core.widget.SmsCodeView
+                android:id="@+id/btn_get_phone_code"
+                android:layout_width="107dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="发送验证码"
+                android:background="@mipmap/rectangle_bg"
+                android:textColor="@color/colorAccent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <com.fumiao.core.widget.KeyEditText
+            android:id="@+id/phone_code"
+            style="@style/MeItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hint="请输入验证码"
+            app:is_number="true"
+            app:key="验证码"></com.fumiao.core.widget.KeyEditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+        <include layout="@layout/include_dialog_btn" />
+    </LinearLayout>
+</LinearLayout>

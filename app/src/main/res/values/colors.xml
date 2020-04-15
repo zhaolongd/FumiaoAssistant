@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFAE57</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FFAE57</color>
+    <color name="line">#E6E6E6</color>
+    <color name="text_color">#A6A6A6</color>
+    <color name="change_pwd_text">#797979</color>
+    <color name="text_press_color">#FF8500</color>
+    <color name="normal">#7DCB0D</color>
+    <color name="forbidden">#F4001F</color>
+    <color name="merchant_type_text">#3C3C3C</color>
+    <color name="light_pink">#fff2f5</color>
+</resources>

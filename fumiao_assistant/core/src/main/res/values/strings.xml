@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">core</string>
-    <string name="not_permission">缺少$$权限，请前往【设置】—【应用管理】中开启</string>
-    <string name="hint_layout_error_network">亲，没有网络了</string>
-    <string name="listview_header_hint_normal">下拉刷新</string>
-</resources>

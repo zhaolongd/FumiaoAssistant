@@ -1,5 +1,0 @@
-include ':app'
-include ':core'
-include ':wheelview'
-include ':pickerview'
-include ':ocr_ui'

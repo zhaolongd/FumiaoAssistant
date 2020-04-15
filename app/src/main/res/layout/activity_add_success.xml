@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="127dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="115dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/success_bg"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_20sp"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/btn_clickable_bg"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/white"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/font_19sp"
+        android:text="完成"/>
+</LinearLayout>

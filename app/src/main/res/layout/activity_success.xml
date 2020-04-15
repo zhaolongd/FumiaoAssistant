@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_base_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:text="终端解绑"
+            android:textColor="@color/font_title"
+            android:textSize="@dimen/font_title" />
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="完成"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="127dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/success_bg"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_title"
+            android:textColor="@color/font_contents"
+            android:text="解绑成功" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_content"
+            android:textColor="@color/font_des"
+            android:text="终端已解绑成功" />
+    </LinearLayout>
+</LinearLayout>

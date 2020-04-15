@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--    XUITheme.Phone-->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:editTextStyle">@style/EditTextBase</item>
+        <item name="editTextStyle">@style/EditTextBase</item>
+    </style>
+
+    <style name="EditTextBase" parent="android:Widget.Holo.Light.EditText"/>
+
+    <style name="main_btn">
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="main_icon">
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">25dp</item>
+    </style>
+
+    <style name="main_layout">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ContentStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MeItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="icon_wide">21dp</item>
+        <item name="icon_high">21dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+    </style>
+
+    <style name="EditText">
+        <item name="colorControlNormal">@color/line</item>
+    </style>
+</resources>

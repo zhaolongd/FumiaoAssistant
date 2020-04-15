@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="text" format="string" />
+    <attr name="icon" format="reference"></attr>
+
+    <declare-styleable name="ShadowImageView">
+        <attr name="shadowRound" format="dimension" />
+        <attr name="shadowSrc" format="reference" />
+        <attr name="shadowColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SmsCodeView">
+        <attr name="textColor" format="color"></attr>
+        <attr name="background" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ArrowLayout">
+        <attr name="icon"></attr>
+        <attr name="text" />
+        <attr name="icon_wide" format="dimension"></attr>
+        <attr name="icon_high" format="dimension"></attr>
+        <attr name="des" format="string"></attr>
+        <attr name="arrow_visibility" format="boolean"></attr>
+        <attr name="des_color" format="reference"></attr>
+        <attr name="key_color" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="OilEditText">
+        <attr name="text" />
+        <attr name="hint" format="string"></attr>
+        <attr name="key" format="string"></attr>
+        <attr name="line_visibility" format="string"></attr>
+        <attr name="digits" format="string"></attr>
+        <attr name="key_width" format="dimension"></attr>
+        <attr name="is_password" format="boolean"></attr>
+        <attr name="is_decimal_number" format="boolean"></attr>
+        <attr name="is_show" format="boolean"></attr>
+        <attr name="is_number" format="boolean"></attr>
+        <attr name="ed_focusable" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ClearText">
+        <attr name="text" />
+        <attr name="clear_hint" format="string"></attr>
+        <attr name="clear_key" format="string"></attr>
+        <attr name="clear_line_visibility" format="string"></attr>
+        <attr name="is_clear" format="boolean"></attr>
+        <attr name="clear_digits" format="string"></attr>
+        <attr name="clear_key_width" format="dimension"></attr>
+        <attr name="clear_is_password" format="boolean"></attr>
+        <attr name="clear_is_number" format="boolean"></attr>
+        <attr name="clear_ed_focusable" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <attr name="interval" format="integer"/>
+    <attr name="showIndicator" format="boolean"/>
+    <attr name="orientation" format="enum">
+        <enum name="horizontal" value="0"/>
+        <enum name="vertical" value="1"/>
+    </attr>
+    <attr name="autoPlaying" format="boolean"/>
+    <declare-styleable name="RecyclerViewBannerBase">
+        <attr name="interval"/>
+        <attr name="showIndicator" />
+        <attr name="orientation" />
+        <attr name="autoPlaying"/>
+        <attr name="indicatorSelectedSrc" format="color|reference"/>
+        <attr name="indicatorUnselectedSrc" format="color|reference"/>
+        <attr name="indicatorSpace" format="dimension|reference"/>
+        <attr name="indicatorMarginLeft" format="dimension|reference"/>
+        <attr name="indicatorMarginRight" format="dimension|reference"/>
+        <attr name="indicatorMarginBottom" format="dimension|reference"/>
+        <attr name="indicatorGravity" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BannerLayout">
+        <attr name="interval" />
+        <attr name="showIndicator" />
+        <attr name="orientation" />
+        <attr name="autoPlaying"/>
+        <attr name="itemSpace" format="integer"/>
+        <attr name="centerScale" format="float"/>
+        <attr name="moveSpeed" format="float"/>
+    </declare-styleable>
+
+</resources>
